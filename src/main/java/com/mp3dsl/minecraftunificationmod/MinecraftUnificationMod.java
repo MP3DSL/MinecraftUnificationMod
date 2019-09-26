@@ -23,13 +23,11 @@ public class MinecraftUnificationMod
     public void preInit(FMLPreInitializationEvent event)
     {
     	OreDict.getOres();
-        logger = event.getModLog();
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
     	Settings.save();
-        logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
 }
