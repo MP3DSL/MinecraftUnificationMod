@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.mp3dsl.mum;
 
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
