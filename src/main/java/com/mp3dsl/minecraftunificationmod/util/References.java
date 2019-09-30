@@ -13,7 +13,7 @@ public class References
     public static final String COMMON_PROXY_CLASS = "com.mp3dsl.minecraftunificationmod.proxy.CommonProxy";
     public static final String CONFIG_VERSION = "1.0";
     
-    public static String[] defaultPrefix = {"ore", "dust", "ingot", "block", "nugget", "dye", "gear", "gem", "rod", "plate", "chunk", "dustTiny", "dustSmall"};
+    public static String[] defaultPrefix = {"ore", "dust", "ingot", "block", "nugget", "gear", "gem", "rod", "plate", "chunk", "dustTiny", "dustSmall"};
     public static String[] searchPrefix = defaultPrefix;
     public static String[] defaultSuffix = {"Iron", "Gold", "Copper", "Tin", "Silver", "Lead", "Nickel", "Platinum", "Zinc", "Aluminium", "Aluminum", "Alumina", "Chromium", "Chrome", "Uranium", "Iridium", "Osmium", "Bronze", "Steel", "Brass", "Invar", "Electrum", "Cupronickel", "Constantan", "Ruby", "Sapphire", "Peridot", "RefinedIron"};
     public static String[] searchSuffix = defaultSuffix;
