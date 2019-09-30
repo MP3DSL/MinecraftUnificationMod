@@ -21,6 +21,7 @@ public class OreDict
 			for(int b = 0; b<References.searchSuffix.length; b++)
 			{
 				String item = References.searchPrefix[a] + References.searchSuffix[b];
+				//System.out.println(item);
 				if(OreDictionary.getOres(item).size() > 1)
 					oreDict.add(OreDictionary.getOres(item));				
 			}
@@ -32,17 +33,26 @@ public class OreDict
 		ArrayList<String> generatedCopy = new ArrayList<String>();
 		generatedCopy.addAll(References.generatedModIDList);
 		
+		System.out.println("Made lists");
+		
 		for(int a = 0; a<oreDict.size(); a++)
 		{
 			for(int b = 0; b<oreDict.get(a).size(); b++) {
 				NonNullList<ItemStack> itemStack = oreDict.get(a);
 				String modID = itemStack.get(b).getItem().getCreatorModId(itemStack.get(b));
-				if(!generated.contains(modID))
+				System.out.println("ModId for " + itemStack.get(b).getDisplayName() + " is: " + modID);
+				if(!generated.contains(modID)) {
+					System.out.println("Generated Array does not contain: " + modID + " adding it now!");
 					generated.add(modID);
-				if(!References.generatedModIDList.contains(modID))
+				}
+				if(!References.generatedModIDList.contains(modID)) {
+					System.out.println("GeneratedModIDList does not contain: " + modID + " adding it now!");
 					References.generatedModIDList.add(modID);
+				}
 			}
 		}
+		
+		System.out.println("Checked OreDict for ModID's");
 		
 		if(!generatedCopy.equals(References.generatedModIDList) || generated.size() != References.generatedModIDList.size())
 		{

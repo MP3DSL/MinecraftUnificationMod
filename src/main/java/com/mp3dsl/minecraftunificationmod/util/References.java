@@ -9,8 +9,8 @@ public class References
     public static final String NAME = "Minecraft Unification Mod";
     public static final String VERSION = "1.0";
     public static final String ACCEPTED_VERSIONS = "[1.12.2]";
-    public static final String CLIENT_PROXY_CLASS = "com.mp3dsl.unification.proxy.ClientProxy";
-    public static final String COMMON_PROXY_CLASS = "com.mp3dsl.unification.proxy.CommonProxy";
+    public static final String CLIENT_PROXY_CLASS = "com.mp3dsl.minecraftunificationmod.proxy.ClientProxy";
+    public static final String COMMON_PROXY_CLASS = "com.mp3dsl.minecraftunificationmod.proxy.CommonProxy";
     public static final String CONFIG_VERSION = "1.0";
     
     public static String[] defaultPrefix = {"ore", "dust", "ingot", "block", "nugget", "dye", "gear", "gem", "rod", "plate", "chunk", "dustTiny", "dustSmall"};

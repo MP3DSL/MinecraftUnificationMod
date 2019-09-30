@@ -11,6 +11,9 @@
   "credits": "",
   "logoFile": "",
   "screenshots": [],
-  "dependencies": []
+  "useDependencyInformation": true,
+  "requiredMods": [],
+  "dependencies": ["*"],
+  "dependants": []
 }
 ]
